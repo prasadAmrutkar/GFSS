@@ -1,0 +1,532 @@
+body {
+    font-family: "Playfair Display", Georgia, serif;
+    background-color: #BF3BB5;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .bg-pink {
+    background-color: #BF3BB5;
+  }
+  
+  .text-muted {
+    color: #5e5e5e;
+  }
+  
+  .text-pink {
+    color: #bf3bb5;
+  }
+  
+  .nav-link {
+    font-size: 0.9rem;
+    font-weight: 300;
+    position: relative;
+    display: inline-block;
+    color: white;
+    text-decoration: none;
+    padding-bottom: 5px;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .nav-link::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 1px;
+    bottom: 0;
+    left: 50%;
+    background-color: white;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .nav-link.active::after {
+    width: 100%;
+    left: 0;
+  }
+  
+  .spacing {
+    letter-spacing: 0.2rem;
+  }
+  
+  /* Main Section */
+  .main-section {
+    padding: 10px;
+  }
+  
+  .main-section img {
+    max-width: auto;
+    height: 100%;
+  }
+  
+  .main-text {
+    background-color: #AB34A2;
+    color: white;
+  }
+  
+  .btn-custom {
+    color: #0f0f0f;
+    background-color: #fff;
+    border: none;
+    font-weight: 700;
+    /* letter-spacing: 4px; */
+    border-radius: 0;
+  }
+  
+  .btn-custom:hover {
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2);
+  
+  }
+  
+  /* Video Section */
+  
+  
+  /* Subscribe */
+  .subscribe .form-control {
+    border: none;
+    background-color: #FDF0FB;
+    border-bottom: 1px solid #ccc;
+    border-radius: 0;
+  }
+  
+  .subscribe .btn-dark {
+    background-color: #000;
+    color: #fff;
+    border-radius: 0;
+    padding: 0.75rem 2rem;
+  }
+  
+  .img-fluid {
+    width: 100%;
+    height: auto;
+  }
+  
+  .d-flex {
+    display: flex;
+  }
+  
+  /* Background Colors */
+  .bg-light-pink {
+    background-color: #FDF0FB;
+  }
+  
+  /* FAQ Webpage */
+  .title {
+    font-size: 1.4rem;
+    text-align: left;
+  }
+  
+  .title:hover {
+    color: #AB34A2;
+  }
+  
+  
+  .btn.title:focus, .btn.title.collapsed:focus {
+    color: #AB34A2;
+  }
+  
+  .btn.title:not(.collapsed) .arrow {
+    transform: rotate(180deg);
+    transition: transform 0.3s ease;
+  }
+  
+  .arrow {
+    color: #AB34A2;
+    font-size: 0.9rem;
+    transition: transform 0.3s ease;
+  }
+  
+  
+  /* Product Webpage */
+  .product-section {
+    padding: 30px;
+  }
+  
+  .product-card {
+    margin-bottom: 30px;
+  }
+  
+  .product-card img {
+    max-width: 90%;
+    border: none;
+  }
+  
+  .product-date {
+    font-size: 0.9rem;
+    color: #6c757d;
+  }
+  
+  .product-title {
+    font-size: 1.5rem;
+    font-weight: 100;
+    margin: 10px 0;
+  }
+  
+  .product-description {
+    font-size: 1rem;
+    color: #6c757d;
+  }
+  
+  .categories-section {
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+  }
+  
+  .categories-section h4 {
+    margin-bottom: 15px;
+  }
+  
+  .categories-list {
+    list-style: none;
+    padding-left: 0;
+  }
+  
+  .categories-list li {
+    margin-bottom: 10px;
+  }
+  
+  .categories-list li a:hover {
+    color: #000;
+  }
+  
+  /* vadhu-var-suchikacom */
+  .product-heading {
+    font-size: 2.25rem;
+    letter-spacing: 1.116px;
+    font-weight: 100;
+  }
+  
+  .post-image {
+    max-width: 650px;
+    /* height: auto; */
+  }
+  
+  .link-section {
+    max-width: 650px;
+    width: 100%;
+    text-align: center;
+    padding: 10px;
+    margin-top: 0px;
+  }
+  
+  .description {
+    max-width: 650px;
+    width: 100%;
+    font-size: 1.125rem;
+    /* text-align: justify; */
+  }
+  
+  .post-image-2 {
+    max-width: 300px;
+    width: 100%;
+  }
+  
+  .link-section-2 {
+    max-width: 300px;
+    width: 100%;
+    text-align: center;
+    padding: 10px;
+    margin-top: 0px;
+  }
+  
+  .image-link-wrapper {
+    max-width: 300px;
+  }
+  
+  
+  .description {
+    max-width: 650px;
+    width: 100%;
+    font-size: 1.1rem;
+    text-align: none;
+  }
+  
+  .categories,
+  .recent-posts {
+    margin-bottom: 20px;
+  }
+  
+  /* Careers Webpage */
+  /* Join Our Team Section*/
+  .join-team-section {
+    background-color: #ffffff;
+    padding: 50px 0;
+  }
+  
+  .hiring {
+    font-weight: 100;
+    color: #AB34A2;
+    letter-spacing: 2px;
+  }
+  
+  .join-team-section h1 {
+    font-size: 3rem;
+    font-weight: 100;
+    letter-spacing: 2.16px;
+    margin-bottom: 10px;
+  }
+  
+  .join-team-section h3 {
+    color: #5E5E68;
+    font-size: 1.3rem;
+    font-weight: 700;
+    text-decoration: underline;
+  }
+  
+  .join-team-section .job-listings {
+    padding-left: 0;
+  }
+  
+  .join-team-section .job-listings li {
+    font-size: 1.3rem;
+    color: #5E5E68;
+    list-style-type: disc;
+  }
+  
+  .join-team-section .job-listings p {
+    margin-top: 5px;
+    font-weight: 100;
+    font-size: 1.4rem;
+    color: #555;
+  }
+  
+  /* Responsive */
+  @media (min-width: 768px) {
+    .join-team-section .job-listings li {
+      margin-left: 2rem;
+    }
+  }
+  
+  @media (min-width: 992px) {
+    .join-team-section .job-listings li {
+      margin-left: 5rem;
+    }
+  }
+  
+  @media (min-width: 1200px) {
+    .join-team-section .job-listings li {
+      margin-left: 9rem;
+    }
+  }
+  
+  /* Apply Now Section */
+  .apply-section {
+    background-color: #ffffff;
+    padding: 50px 0;
+  }
+  
+  .apply-section h3 {
+    font-size: 1.5rem;
+    text-align: center;
+    color: #333;
+  }
+  
+  .apply-form {
+    max-width: 800px;
+    margin: 0 auto;
+    background-color: #ffffff;
+    padding: 30px;
+  }
+  
+  .apply-form .form-group {
+    margin-bottom: 15px;
+  }
+  
+  .apply-form .form-control {
+    padding: 10px;
+    font-size: 16px;
+    width: 100%;
+    border: none;
+  }
+  
+  .apply-form p {
+    font-size: 0.8rem;
+  }
+  
+  .file-input {
+    display: none;
+  }
+  
+  .file-label i {
+    margin-right: 8px;
+    color: #d63384;
+    display: inline-block;
+    margin-bottom: 15px;
+  }
+  
+  .file-label {
+    margin-right: 8px;
+    color: #BF3BB5;
+    display: inline-block;
+    cursor: pointer;
+    margin-bottom: 15px;
+  }
+  
+  .file-label:hover {
+    color: #d63384;
+  }
+  
+  .submit-btn {
+    background-color: #000;
+    color: #fff;
+    font-weight: 600;
+    border-radius: 0;
+  }
+  
+  .submit-btn:hover {
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.3);
+    color: #fff;
+  }
+  
+  /* Contact US Section */
+  .contact-section {
+    background-color: #fff;
+    padding: 50px 0;
+  }
+  
+  .contact-section h2 {
+    font-size: 1.3rem;
+    letter-spacing: 3px;
+    font-weight: 200;
+  }
+  
+  .form-control {
+    border: none;
+    max-width: 800px;
+    margin: 0 auto;
+    background-color: #ffffff;
+    padding: 30px;
+  }
+  
+  textarea.form-control {
+    border-radius: 0;
+  }
+  
+  button.btn-dark {
+    background-color: #000;
+    padding: 15px 30px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    border-radius: 0;
+    transition: all 0.3s ease;
+  }
+  
+  button.btn-dark:hover {
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.3);
+  }
+  
+  .captcha {
+    font-size: 0.8rem;
+  }
+  
+  .captcha a:hover {
+    color: #000;
+  }
+  
+  /* Info Section */
+  .contact-information {
+    background-color: #fff;
+  }
+  
+  .info-heading {
+    font-size: 1.4rem;
+  }
+  
+  .address {
+    font-size: 1.09rem;
+  }
+  
+  .hours-section {
+    text-align: center;
+    margin-top: 20px;
+  }
+  
+  .hours-table {
+    margin: 0 auto;
+    width: auto;
+  }
+  
+  td {
+    padding: 8px 20px;
+  }
+  
+  /* Gallery Webpage */
+  .carousel-inner {
+    width: 100%;
+    height: 100%;
+  }
+  
+  .carousel-item img {
+    width: 100%;
+    height: 400px;
+    object-fit: contain;
+    object-position: center;
+  }
+  
+  .square-image {
+    width: 100%; /* Make the image take full width of the column */
+    height: auto; /* Maintain aspect ratio */
+    aspect-ratio: 1 / 1; /* Force a square shape */
+  }
+  
+  
+  @media (max-width: 768px) {
+    .carousel-item img {
+      height: 300px;
+    }
+  }
+  
+  .thumbnail-section {
+    margin-top: 20px;
+  }
+  
+  .img-square {
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+    cursor: pointer;
+    border: 1px solid #ddd;
+  }
+  
+  .thumbnail-section h4 {
+    margin-bottom: 20px;
+  }
+  
+  /* Services Section */
+  .service-section {
+    background-image: url('../assets/bg.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 60vh;
+    color: white;
+    position: relative;
+  }
+  
+  .content {
+    max-width: 800px;
+  }
+  
+  .quote {
+    font-size: 3rem;
+    line-height: 1.2;
+    position: relative;
+  }
+  
+  /* Responsive */
+  @media (max-width: 768px) {
+    .quote {
+      font-size: 1.5rem;
+    }
+  
+    .quote::before,
+    .quote::after {
+      font-size: 2rem;
+    }
+  }
+  
+  /* Footer Text */
+  footer p {
+    font-size: 0.8rem;
+    color: #333;
+    margin: 0;
+  }
